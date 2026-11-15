@@ -1,0 +1,462 @@
+{
+  "item": "DTEEC_045994_1985_046060_1985_U01",
+  "centerLonLat": [
+    77.45,
+    18.44
+  ],
+  "width": 500,
+  "height": 500,
+  "targetCrsWkt": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Equidistant Cylindrical (Spherical)\",ID[\"EPSG\",1029]],PARAMETER[\"Latitude of 1st standard parallel\",18.44,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8823]],PARAMETER[\"Latitude of natural origin\",18.44,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",77.45,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+  "targetTransform": [
+    -500.0,
+    2.0,
+    0.0,
+    500.0,
+    0.0,
+    -2.0
+  ],
+  "resampling": "nearest elevation; minimum validity over source footprint",
+  "checks": {
+    "allValidCellsMatchNearestScaledSourceExactly": true,
+    "maxElevationDifferenceM": 0.0,
+    "centerEastWestGeodesicSpacingM": 1.9999999999364517,
+    "orthogonalPixelVectors": true,
+    "validMaskOnlyZeroOne": true
+  },
+  "source": {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+    "width": 6864,
+    "height": 14175,
+    "dtype": "float32",
+    "scale": 1.0,
+    "offset": 0.0,
+    "nodata": -3.4028226550889045e+38,
+    "transform": [
+      4586874.845967728,
+      1.0165533020257713,
+      0.0,
+      1099451.5897741036,
+      0.0,
+      -1.0165533020257713
+    ],
+    "crsWkt": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+    "window": [
+      3365,
+      5827,
+      1042,
+      989
+    ],
+    "tags": {
+      "DATA_SET_ID": "\"MRO-M-HIRISE-5-DTM-V1.0\"",
+      "INSTRUMENT_ID": "\"HIRISE\"",
+      "INSTRUMENT_NAME": "\"HIGH RESOLUTION IMAGING SCIENCE EXPERIMENT\"",
+      "PRODUCER_INSTITUTION_NAME": "\"UNIVERSITY OF ARIZONA\"",
+      "PRODUCT_ID": "\"DTEEC_045994_1985_046060_1985_U01\"",
+      "TARGET_NAME": "\"MARS\"",
+      "AREA_OR_POINT": "Area"
+    }
+  },
+  "controlSamples": [
+    {
+      "row": 0,
+      "col": 0,
+      "sourceRow": 5830,
+      "sourceCol": 3368,
+      "rawDN": -2555.2275390625,
+      "elevationM": -2555.2275390625
+    },
+    {
+      "row": 249,
+      "col": 249,
+      "sourceRow": 6320,
+      "sourceCol": 3885,
+      "rawDN": -2569.032470703125,
+      "elevationM": -2569.032470703125
+    },
+    {
+      "row": 499,
+      "col": 499,
+      "sourceRow": 6812,
+      "sourceCol": 4403,
+      "rawDN": -2585.138671875,
+      "elevationM": -2585.138671875
+    },
+    {
+      "row": 100,
+      "col": 400,
+      "sourceRow": 6027,
+      "sourceCol": 4198,
+      "rawDN": -2570.25341796875,
+      "elevationM": -2570.25341796875
+    }
+  ],
+  "orthoimage": {
+    "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+    "width": 27456,
+    "height": 56700,
+    "dtype": "uint16",
+    "scale": 0.0002267694487077,
+    "offset": 0.0519947235533183,
+    "nodata": 0.0,
+    "transform": [
+      4586876.54522392,
+      0.2541382261019006,
+      0.0,
+      1099450.2009349486,
+      0.0,
+      -0.2541382261019006
+    ],
+    "crsWkt": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+    "window": [
+      13461,
+      23311,
+      4153,
+      3940
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "displayPercentiles": [
+      56.0,
+      150.0
+    ],
+    "validPixels": 250000,
+    "outputTransform": [
+      -500.0,
+      2.0,
+      0.0,
+      500.0,
+      0.0,
+      -2.0
+    ]
+  },
+  "geographicBounds": [
+    77.44110814918851,
+    18.431564697570945,
+    77.4588918508115,
+    18.448435302429058
+  ],
+  "validPixels": 250000,
+  "noDataPixels": 0,
+  "elevationRangeM": [
+    -2588.523681640625,
+    -2546.74755859375
+  ],
+  "downloadBytes": 33983681,
+  "httpRequests": [
+    {
+      "url": "https://stac.astrogeology.usgs.gov/api/collections/mro_hirise_socet_dtms/items/DTEEC_045994_1985_046060_1985_U01",
+      "bytes": 10124,
+      "kind": "metadata"
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/provenance.txt",
+      "bytes": 3483,
+      "kind": "metadata"
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+      "bytes": 0,
+      "range": null,
+      "contentRange": null,
+      "assetBytes": "157098530",
+      "status": 200
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+      "bytes": 16384,
+      "range": "bytes=0-16383",
+      "contentRange": "bytes 0-16383/157098530",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+      "bytes": 1231386,
+      "range": "bytes=94918123-96149508",
+      "contentRange": "bytes 94918123-96149508/157098530",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+      "bytes": 1218645,
+      "range": "bytes=90692562-91911206",
+      "contentRange": "bytes 90692562-91911206/157098530",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+      "bytes": 1223057,
+      "range": "bytes=99096266-100319322",
+      "contentRange": "bytes 99096266-100319322/157098530",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+      "bytes": 812797,
+      "range": "bytes=99096266-99909062",
+      "contentRange": "bytes 99096266-99909062/157098530",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+      "bytes": 1218645,
+      "range": "bytes=90692562-91911206",
+      "contentRange": "bytes 90692562-91911206/157098530",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+      "bytes": 1231386,
+      "range": "bytes=94918123-96149508",
+      "contentRange": "bytes 94918123-96149508/157098530",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/DTEEC_045994_1985_046060_1985_U01.tif",
+      "bytes": 442368,
+      "range": "bytes=99893248-100335615",
+      "contentRange": "bytes 99893248-100335615/157098530",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 0,
+      "range": null,
+      "contentRange": null,
+      "assetBytes": "1011290991",
+      "status": 200
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 16384,
+      "range": "bytes=0-16383",
+      "contentRange": "bytes 0-16383/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 32768,
+      "range": "bytes=16384-49151",
+      "contentRange": "bytes 16384-49151/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1541110,
+      "range": "bytes=608460682-610001791",
+      "contentRange": "bytes 608460682-610001791/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1529999,
+      "range": "bytes=615387603-616917601",
+      "contentRange": "bytes 615387603-616917601/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1343764,
+      "range": "bytes=629040952-630384715",
+      "contentRange": "bytes 629040952-630384715/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1504899,
+      "range": "bytes=594508571-596013469",
+      "contentRange": "bytes 594508571-596013469/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1483708,
+      "range": "bytes=587629073-589112780",
+      "contentRange": "bytes 587629073-589112780/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1509734,
+      "range": "bytes=622211491-623721224",
+      "contentRange": "bytes 622211491-623721224/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1523673,
+      "range": "bytes=601500435-603024107",
+      "contentRange": "bytes 601500435-603024107/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 65536,
+      "range": "bytes=49152-114687",
+      "contentRange": "bytes 49152-114687/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 180224,
+      "range": "bytes=630374400-630554623",
+      "contentRange": "bytes 630374400-630554623/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 180224,
+      "range": "bytes=635813888-635994111",
+      "contentRange": "bytes 635813888-635994111/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 360448,
+      "range": "bytes=635994112-636354559",
+      "contentRange": "bytes 635994112-636354559/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 720896,
+      "range": "bytes=636354560-637075455",
+      "contentRange": "bytes 636354560-637075455/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1441792,
+      "range": "bytes=637075456-638517247",
+      "contentRange": "bytes 637075456-638517247/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 180224,
+      "range": "bytes=642416640-642596863",
+      "contentRange": "bytes 642416640-642596863/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 360448,
+      "range": "bytes=642596864-642957311",
+      "contentRange": "bytes 642596864-642957311/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 720896,
+      "range": "bytes=642957312-643678207",
+      "contentRange": "bytes 642957312-643678207/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1441792,
+      "range": "bytes=643678208-645119999",
+      "contentRange": "bytes 643678208-645119999/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1343764,
+      "range": "bytes=629040952-630384715",
+      "contentRange": "bytes 629040952-630384715/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1523673,
+      "range": "bytes=601500435-603024107",
+      "contentRange": "bytes 601500435-603024107/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1509734,
+      "range": "bytes=622211491-623721224",
+      "contentRange": "bytes 622211491-623721224/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1541110,
+      "range": "bytes=608460682-610001791",
+      "contentRange": "bytes 608460682-610001791/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1504899,
+      "range": "bytes=594508571-596013469",
+      "contentRange": "bytes 594508571-596013469/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1529999,
+      "range": "bytes=615387603-616917601",
+      "contentRange": "bytes 615387603-616917601/1011290991",
+      "assetBytes": null,
+      "status": 206
+    },
+    {
+      "url": "https://astrogeo-ard.s3-us-west-2.amazonaws.com/mars/mro/hirise/controlled/dtm/ESP_045994_1985_ESP_046060_1985/ESP_045994_1985_RED_A_01_ORTHO.tif",
+      "bytes": 1483708,
+      "range": "bytes=587629073-589112780",
+      "contentRange": "bytes 587629073-589112780/1011290991",
+      "assetBytes": null,
+      "status": 206
+    }
+  ],
+  "versions": {
+    "rasterio": "1.5.2",
+    "gdal": "3.12.2",
+    "numpy": "2.5.4"
+  },
+  "sha256": {
+    "source-pds-label.txt": "cfeddc035193714a714014e51013e69ddeae66a29bc32271d13b6e81a9181f12",
+    "valid.u8": "6d40de16c67dd600d6b603179984ff518271f699effb254ab1572b43f79ab2e8",
+    "source-processing.txt": "55a8e6ee292e2a646325ab3474eb262edb1fef866bf2e387c9ea972fdee7cf01",
+    "hillshade.png": "f8236b0802ab7f82f8dfd72dafdf2f106bdbab80fefdbcd0d8d2ae532406063f",
+    "metadata.json": "6f66a418d2d5b66059c53c50ffe548a65970ddfcba2d78f79ffaa06be9766773",
+    "terrain.tif": "fa86d85f1b270427cde1c5307dadcf0b0b2a4db836f4fe3490157d728cdbe7fc",
+    "orthoimage.png": "7fda7287de5674e9c9002cc9a03ed8da5626be9bf056bd0bd5f813518bbacd9f",
+    "source-stac-item.json": "005d263f5127b5d8460b6fb3596a61ae25fb1e34e3136021a98a817bef1e7caa",
+    "elevation.f32le": "eadfbf1d1f97b3a6b1ec985992ad41cf362cd83a5f9d89f8536107af76f251e7"
+  }
+}

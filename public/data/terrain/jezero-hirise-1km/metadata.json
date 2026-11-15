@@ -1,0 +1,48 @@
+{
+  "id": "jezero-hirise-1km",
+  "title": "Jezero · HiRISE real terrain · 1 km²",
+  "sourceOrganization": "NASA MRO/HiRISE · University of Arizona · USGS Astrogeology",
+  "sourceUrl": "https://stac.astrogeology.usgs.gov/api/collections/mro_hirise_socet_dtms/items/DTEEC_045994_1985_046060_1985_U01",
+  "horizontalCrs": "MARS_JEZERO_LOCAL_EQC_18_44N_77_45E",
+  "horizontalCrsDefinition": "PROJCRS[\"unknown\",BASEGEOGCRS[\"unknown\",DATUM[\"unknown\",ELLIPSOID[\"unknown\",3396190,0,LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]],PRIMEM[\"Reference meridian\",0,ANGLEUNIT[\"degree\",0.0174532925199433,ID[\"EPSG\",9122]]]],CONVERSION[\"unknown\",METHOD[\"Equidistant Cylindrical (Spherical)\",ID[\"EPSG\",1029]],PARAMETER[\"Latitude of 1st standard parallel\",18.44,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8823]],PARAMETER[\"Latitude of natural origin\",18.44,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",77.45,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"False easting\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1,ID[\"EPSG\",9001]]]]",
+  "coordinateTransform": {
+    "sourceCrs": "IAU_2015:49910",
+    "sourceCrsDefinition": "PROJCS[\"Mars (2015) - Sphere / Ocentric / Equirectangular, clon = 0\",GEOGCS[\"Mars (2015) - Sphere / Ocentric\",DATUM[\"Mars (2015) - Sphere\",SPHEROID[\"Mars (2015) - Sphere\",3396190,0,AUTHORITY[\"IAU\",\"49900\"]],AUTHORITY[\"IAU\",\"49900\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"49900\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"49900\"]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"49910\"]]",
+    "targetCrs": "MARS_JEZERO_LOCAL_EQC_18_44N_77_45E",
+    "method": "PROJ inverse source EQC → Mars planetocentric lon/lat → local EQC; nearest DEM, minimum validity",
+    "definition": "+proj=eqc +lat_ts=18.44 +lat_0=18.44 +lon_0=77.45 +R=3396190 +units=m; x=R*cos(18.44°)*(lon-77.45°), y=R*(lat-18.44°), angular differences in radians."
+  },
+  "horizontalUnit": "m",
+  "verticalUnit": "m",
+  "verticalDatum": "Mars2000 Datum: Martian equipotential surface (areoid), per original HiRISE PDS label; MOLA-controlled elevations in meters. No vertical transformation applied.",
+  "limitations": [
+    "Real NASA/USGS source; independent SCI-03 scientific and operational validation is pending.",
+    "2 m output sampling does not imply 2 m horizontal accuracy or resolved terrain detail; stereo matching, jitter, seams and interpolation artifacts may affect slopes.",
+    "Source DTM is MOLA-controlled. Source FOM was not classified in this subset; source manual interpolation and low-confidence cells are not identified by the validity mask.",
+    "No confirmed hazard layer is available. Valid elevation is not evidence of safe traversal.",
+    "Nearest-neighbor reprojection preserves source sampled elevations; validity uses the minimum source mask over each target footprint. NoData is never filled.",
+    "Local spherical equirectangular projection is true-scale at 18.44°N; scale varies slightly across the 1 km patch. The grid is an engineering planning projection, not an official EVA safety standard.",
+    "STAC acquisition timestamps are inconsistent with the ESP orbit identifiers and are not used as authoritative acquisition dates."
+  ],
+  "provenance": "scientific",
+  "width": 500,
+  "height": 500,
+  "cellSizeX": 2,
+  "cellSizeY": 2,
+  "transform": {
+    "coefficients": [
+      -500.0,
+      2.0,
+      0.0,
+      500.0,
+      0.0,
+      -2.0
+    ]
+  },
+  "imagery": {
+    "assetUrl": "/data/terrain/jezero-hirise-1km/orthoimage.png",
+    "mimeType": "image/png",
+    "description": "HiRISE ESP_045994_1985_RED_A_01_ORTHO, reprojected to the exact DEM grid, nearest-neighbor, grayscale 2–98 percentile display stretch. Not a hazard map.",
+    "alignment": "terrain-grid"
+  }
+}
